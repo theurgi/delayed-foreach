@@ -1,0 +1,13 @@
+{
+  "name": "delayed-foreach",
+  "author": "theurgi",
+  "license": "MIT",
+  "type": "module",
+  "main": "main.js",
+  "devDependencies": {
+    "@theurgi/prettier-config": "^3.0.0",
+    "eslint": "^6.6.0",
+    "prettier": "1.19.1"
+  },
+  "prettier": "@theurgi/prettier-config"
+}
