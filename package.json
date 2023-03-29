@@ -26,7 +26,8 @@
 	"scripts": {
 		"build": "tsup",
 		"lint": "eslint --cache .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"prepack": "pnpm build"
 	},
 	"devDependencies": {
 		"@theurgi/eslint-config": "^1.8.0",
