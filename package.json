@@ -1,0 +1,54 @@
+{
+	"name": "delayed-foreach",
+	"version": "0.0.0-semantic-release",
+	"publishConfig": {
+		"access": "public"
+	},
+	"description": "A 'delayed' foreach loop that runs at specified intervals",
+	"keywords": [
+		"forEach",
+		"loop",
+		"array",
+		"delay",
+		"rate limit",
+		"animation",
+		"async"
+	],
+	"license": "MIT",
+	"repository": "https://github.com/theurgi/delayed-foreach",
+	"author": "theurgi",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"scripts": {
+		"build": "tsup",
+		"lint": "eslint --cache .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@theurgi/eslint-config": "^1.8.0",
+		"eslint": "^8.37.0",
+		"prettier": "^2.8.7",
+		"tsup": "^6.7.0",
+		"typescript": "^5.0.2"
+	},
+	"eslintConfig": {
+		"extends": [
+			"@theurgi/eslint-config"
+		]
+	},
+	"tsup": {
+		"clean": true,
+		"dts": true,
+		"entryPoints": [
+			"main.ts"
+		],
+		"format": [
+			"esm"
+		],
+		"outDir": "dist"
+	}
+}
