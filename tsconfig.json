@@ -2,12 +2,15 @@
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"lib": ["esnext"],
+		"lib": ["esnext", "dom"],
 		"module": "esnext",
 		"moduleResolution": "node",
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "esnext"
+		"target": "esnext",
+		"types": ["jest"],
+		"typeRoots": ["./node_modules/@types"]
 	},
+	"exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
 	"include": ["src/main.ts"]
 }

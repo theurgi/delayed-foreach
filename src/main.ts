@@ -28,7 +28,9 @@ export function delayedForEachSync<T>({
 		forEach(item)
 		if (delay > 0) {
 			const start = Date.now()
-			while (Date.now() - start < delay) {}
+			while (Date.now() - start < delay) {
+				/* empty */
+			}
 		}
 	}
 	if (onCompletion) {
@@ -61,6 +63,7 @@ export async function delayedForEach<T>({
 			await new Promise((resolve) => setTimeout(resolve, delay))
 		}
 	}
+
 	if (onCompletion) {
 		onCompletion()
 	}
